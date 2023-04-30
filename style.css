@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#capa{
+    width: 100%;
+    height: 521px;
+}
+#navBar{
+    position: absolute;
+    display: flex;
+    top: 0%;
+    padding: 10px 25px;
+    justify-content:space-around;
+    background-color: #feffff1a;
+    width: 100%;
+}
+#logo{
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    color: black;
+
+}
+#options a{
+    display: flex;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    color: black;
+    
+    
+}
+#itens{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    
+}
+#main{
+    padding: auto;
+    position: absolute;
+    left: 60%;
+    bottom: 20%;
+    border: 1px solid #809FAC;
+    width: 20%;
+    height: 300px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    background-color: #feffff6c;
+    border-radius: 10px;
+
+}
+.input{
+    border-radius: 3px;
+    border: none;
+    background-color: #feffff6c;
+    padding: 5px;
+    box-shadow: 0px 2px rgb(14, 13, 13) ;
+    width: 79%;
+
+}
+#btn{
+    background-color: #C1FE00;
+}
+#nome{
+    margin-bottom: 10px;
+}
+#email{
+        margin-bottom: 10px;
+
+}
+#texto{
+    position:absolute;
+    bottom: 20%;
+    left: 40px;
+    border: 1px solid black;
+    background-color: #feffff6c;
+    width: 50%;
+    font-family: 'Dosis', sans-serif;
+    border: 1px solid #809FAC;
+    border-radius: 10px;
+    padding: 10px;
+}
