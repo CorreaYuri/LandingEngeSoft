@@ -1,4 +1,4 @@
-
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +8,7 @@
 #capa{
     width: 100%;
     height: 521px;
+    filter: brightness(50%);
 }
 #navBar{
     position: absolute;
@@ -22,6 +23,7 @@
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
     color: black;
+    border-bottom: 1px solid #c3fe00a4;
 
 }
 #options a{
@@ -38,12 +40,13 @@
     gap: 20px;
     
 }
+
 #main{
     padding: auto;
     position: absolute;
     left: 60%;
     bottom: 20%;
-    border: 1px solid #809FAC;
+    border: 1px solid none;
     width: 20%;
     height: 300px;
     font-family: 'Dosis', sans-serif;
@@ -58,7 +61,7 @@
     border: none;
     background-color: #feffff6c;
     padding: 5px;
-    box-shadow: 0px 2px rgb(14, 13, 13) ;
+    box-shadow: 0px 2px 5px rgb(14, 13, 13) ;
     width: 79%;
 
 }
@@ -75,12 +78,44 @@
 #texto{
     position:absolute;
     bottom: 20%;
-    left: 40px;
-    border: 1px solid black;
-    background-color: #feffff6c;
-    width: 50%;
+    left: 205px;
+    width: 40%;
+    height:auto;
     font-family: 'Dosis', sans-serif;
-    border: 1px solid #809FAC;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px 10px;
+    background-color:  #feffff6c;
+    height: 300px;
+    border: 1px solid none;
+}
+#texto h1{
+    font-size: 32px;
+    color: black;
+    text-shadow: 1px 5px 15px white;
+}
+.itens_texto:hover{
+    border-bottom: 1px solid #c3fe00a4;
+}
+#texto p{
+    color: black;
+    font-weight:200;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-shadow: 1px 5px 15px white;
+}
+#container_animation{
+    text-align: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #c3fe00a4;
+    border-radius: 50%;
+    right: 50%;
+    bottom: 20px;
+    -webkit-animation:heartbeat 1.5s ease-in-out infinite both;animation:heartbeat 1.5s ease-in-out infinite both
+}
+#setas{
+    width: 20px;
+    position: relative;
+    top:15px;
 }
